@@ -13,4 +13,6 @@ bs.find_all('span', {'class': {'green', 'red'}})
 nameList = bs.find_all(text='the prince')
 print(len(nameList))
 
-title = bs.find_all(id='title', class_='text')
+title = bs.find_all(id='title', class_='text')      # id is unique
+print(len(title))
+title = bs.find_all(id='title')
